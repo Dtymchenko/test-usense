@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <h1>Test By Dmytro Tymchenko</h1>
+    <label for="password" class="password-label">Password:</label>
+    <input
+    placeholder="Enter password"
+    type="password"
+    id="password"
+    #passwordInput
+    (input)="checkPasswordStrength(passwordInput.value)"
+    >
+    <div class="sections" id="strength-sections">
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+    </div>
+</div>
